@@ -5,3 +5,7 @@ body {
     background-repeat: no-repeat !important;
     background-attachment: fixed;
 }
+
+.main-container {
+    max-width: 950px;
+}
