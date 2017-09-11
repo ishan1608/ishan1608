@@ -9,3 +9,9 @@ body {
 .main-container {
     max-width: 950px;
 }
+
+.fixed-side-box {
+    position: fixed;
+    top: 10px;
+    z-index: 1;
+}
