@@ -7,11 +7,26 @@ body {
 }
 
 .main-container {
-    max-width: 950px;
+    /*max-width: 950px;*/
 }
 
 .fixed-side-box {
-    position: fixed;
-    top: 10px;
-    z-index: 1;
+    /*position: fixed;*/
+    /*top: 10px;*/
+    /*z-index: 1;*/
+}
+
+#side-box {
+	background-color: bisque;
+}
+
+#main-box {
+	background-color: burlywood;
+}
+.top-container {
+	height: 500px;
+	overflow-y: auto;
+}
+.affix {
+	top: 0;
 }
