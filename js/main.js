@@ -18,10 +18,8 @@ setInterval(function () {
         scrolled = false;
         if ($(window).scrollTop() > sideBoxTopOffset) {
             sideBox.addClass('fixed-side-box');
-            mainBox.addClass('offset-lg-4');
         } else {
             sideBox.removeClass('fixed-side-box');
-            mainBox.removeClass('offset-lg-4');
         }
     }
 }, 10);
