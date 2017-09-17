@@ -7,12 +7,15 @@ body {
 }
 
 .main-container {
-    // TODO Need to find a way to make the whole section with a maxmimum width
-    // max-width: 1366px;
+    max-width: 1366px;
 }
 
 .fixed-side-box {
     position: fixed;
     top: 10px;
     z-index: 1;
+}
+
+.fixed-side-box-width {
+    width: 455px;
 }

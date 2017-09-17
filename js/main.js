@@ -25,4 +25,20 @@ setInterval(function () {
     }
 }, 10);
 
+var adjustSideBoxWidth = function () {
+    'use strict';
+    var containerWidth = $(".main-container").width();
+    if (containerWidth >= 1336) {
+        sideBox.addClass('fixed-side-box-width');
+    } else {
+        sideBox.removeClass('fixed-side-box-width');
+    }
+    console.log(containerWidth + ' resize ' + containerWidth / 3);
+};
 
+adjustSideBoxWidth();
+
+$(window).resize(function (event) {
+    'use strict';
+    adjustSideBoxWidth();
+});
