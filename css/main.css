@@ -19,3 +19,22 @@ body {
 .fixed-side-box-width {
     width: 455px;
 }
+
+/*
+    Body section
+*/
+.profile {
+    text-align: center;
+}
+.author-image {
+    width: 200px;
+    height: 200px;
+    background-image: url('../img/author.jpeg');
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.section-heading {
+    text-transform: uppercase;
+}
