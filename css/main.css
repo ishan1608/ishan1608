@@ -116,3 +116,7 @@ body {
 .blog-btn:hover {
     color: #000000;
 }
+
+li {
+    list-style-type: none;
+}
