@@ -38,3 +38,65 @@ body {
 .section-heading {
     text-transform: uppercase;
 }
+
+.timeline-box {
+    position: relative;
+}
+
+.timeline-box:after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    border-left: 1px solid #ffffff;
+    top: 0;
+    bottom: 0;
+    /* Sending border a little more left to make it look good */
+    left: -26px;
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .timeline-box:after {
+        left: 25%;
+    }
+}
+
+/* Year pointer */
+.pointer {
+    background-color: #c0e3e7;
+    height: 1.98em;
+}
+
+/* Smaller than Large Devices (992px and below) */
+@media (max-width: 992px) {
+    /* Year Pointing left */
+    .pointer:before {
+        content: "";
+        top: 0;
+        right: 100%;
+        width: 0;
+        height: 0;
+        position: absolute;
+        border-top: 16px solid transparent!important;
+        border-bottom: 16px solid transparent!important;
+        border-left: 10px solid transparent!important;
+        border-right: 10px solid #c0e3e7!important;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    /* Year pointing right */
+    .pointer:after {
+        content: "";
+        top: 0;
+        left: 100%;
+        width: 0;
+        height: 0;
+        position: absolute;
+        border-top: 16px solid transparent!important;
+        border-bottom: 16px solid transparent!important;
+        border-left: 8px solid #c0e3e7!important;  
+        border-right: 10px solid transparent!important;
+    }
+}
