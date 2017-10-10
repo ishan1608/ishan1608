@@ -23,7 +23,7 @@ body {
 /*
     Body section
 */
-.profile {
+.centered-content {
     text-align: center;
 }
 .author-image {
@@ -119,4 +119,18 @@ body {
 
 li {
     list-style-type: none;
+}
+
+li a {
+    color: #4d4d4d;
+}
+
+li a:hover {
+    color: #000000;
+}
+
+#side-box li {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
 }
