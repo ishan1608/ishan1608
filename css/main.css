@@ -161,3 +161,7 @@ li a:hover {
     padding: 1em;
     overflow-x: hidden;
 }
+
+.section-box p {
+    margin-right: 1em;
+}
