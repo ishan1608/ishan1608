@@ -1,22 +1,21 @@
 /*jslint browser: true */
-/*global $, jQuery, console*/
+/*global $, window, setInterval */
 
 var BOOTSTRAP_LG_WIDTH = 992;
 
 var configChanged = true;
 var sideBox = $('#side-box');
-var mainBox = $('#main-box');
 var mainContainer = $(".main-container");
 
 var sideBoxTopPosition = sideBox.position().top;
 
 // Sets the configChange flag everytime the window is scrolled
-$(window).scroll(function (event) {
+$(window).scroll(function () {
     'use strict';
     configChanged = true;
 });
 // Sets the configChange flag everytime the window is resized
-$(window).resize(function (event) {
+$(window).resize(function () {
     'use strict';
     configChanged = true;
 });
