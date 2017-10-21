@@ -65,6 +65,8 @@ body {
 .pointer {
     background-color: #c0e3e7;
     height: 1.98em;
+    line-height: 1.98em;
+    text-align: center;
 }
 
 /* Smaller than Large Devices (992px and below) */
