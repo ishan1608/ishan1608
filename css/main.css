@@ -41,13 +41,14 @@ body {
 
 .timeline-box {
     position: relative;
+    left: 26px
 }
 
 .timeline-box:after {
     content: "";
     position: absolute;
     z-index: 0;
-    border-left: 1px solid #ffffff;
+    border-left: 1px solid #000000;
     top: 0;
     bottom: 0;
     /* Sending border a little more left to make it look good */
@@ -150,4 +151,11 @@ li a:hover {
     top: 0;
     right: -200px;
     fill: #ebf8ff;
+}
+
+.section-box {
+    background-color: white;
+    box-shadow: inset 0 0 1em #dddddd, 0 0 1em #8e8e8e;
+    padding: 1em;
+    overflow-x: hidden;
 }
