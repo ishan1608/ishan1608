@@ -110,7 +110,7 @@ body {
     text-align: center;
 }
 
-.blog-btn {
+.blog-btn, .download-resume-btn {
     border-radius: 35px;
     background-color: #c0e3e7;
     border-color: #c0e3e7;
@@ -118,7 +118,7 @@ body {
     box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
-.blog-btn:hover {
+.blog-btn:hover, .download-resume-btn:hover {
     color: #000000;
 }
 
