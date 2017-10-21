@@ -1,5 +1,5 @@
 body {
-    background-image: url(../img/abstract-1673772_960_720.png);
+    background-color: floralwhite;
     background-size: cover;
     background-position: top center !important;
     background-repeat: no-repeat !important;
@@ -133,4 +133,19 @@ li a:hover {
     display: inline-block;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+#bg-shape-1 {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    fill: #eae9d4;
+}
+
+#bg-shape-2 {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    right: -200px;
+    fill: #ebf8ff;
 }
