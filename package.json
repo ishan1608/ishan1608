@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ishanatmuz/space.git"
+    "url": "git+https://github.com/ishan1608/space.git"
   },
   "keywords": [
     "ishan",
@@ -18,9 +18,9 @@
   "author": "Ishan <ishan1608@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ishanatmuz/space/issues"
+    "url": "https://github.com/ishan1608/space/issues"
   },
-  "homepage": "https://github.com/ishanatmuz/space#readme",
+  "homepage": "https://github.com/ishan1608/space#readme",
   "dependencies": {
     "node-static": "^0.7.10",
     "winston": "^2.4.0",
