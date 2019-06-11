@@ -3,7 +3,7 @@
 const http = require('http');
 const wurl = require('wurl');
 const fs = require('fs');
-const static = require('node-static');
+const nodeStatic = require('node-static');
 const winston = require('winston');
 
 const hostname = '0.0.0.0';
@@ -18,17 +18,17 @@ winston.configure({
 });
 winston.level = 'debug';
 
-var staticServer = new static.Server();
+const staticServer = new nodeStatic.Server();
 
 const server = http.createServer((req, res) => {
-	var firstLocation = wurl(1, req.url);
+	const firstLocation = wurl(1, req.url);
 	winston.log('debug', `Request ${req.method} ${req.url}`);
 
 	if (firstLocation === '' || firstLocation === 'index') {
-		fs.readFile('index.html', function(err, file_data) {
+		fs.readFile('index.html', function(err, fileData) {
             if (!err) {
             	res.writeHead(200, {'Content-Type': 'text/html'});
-            	res.end(file_data);
+            	res.end(fileData);
             } else {
             	winston.log('error', `Cannot open index.html ${req.method} ${req.url}`);
                 res.writeHead(500, {'Content-Type': 'text/plain'});
