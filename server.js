@@ -11,10 +11,10 @@ const port = 8000;
 
 // Configuring winston
 winston.configure({
-    transports: [
-        new (winston.transports.Console)(),
-        new (winston.transports.File)({ filename: 'default.log' })
-    ]
+	transports: [
+		new (winston.transports.Console)(),
+		new (winston.transports.File)({filename: 'default.log'})
+	]
 });
 winston.level = 'debug';
 
@@ -25,16 +25,16 @@ const server = http.createServer((req, res) => {
 	winston.log('debug', `Request ${req.method} ${req.url}`);
 
 	if (firstLocation === '' || firstLocation === 'index') {
-		fs.readFile('index.html', function(err, fileData) {
-            if (!err) {
-            	res.writeHead(200, {'Content-Type': 'text/html'});
-            	res.end(fileData);
-            } else {
-            	winston.log('error', `Cannot open index.html ${req.method} ${req.url}`);
-                res.writeHead(500, {'Content-Type': 'text/plain'});
-			    res.end('uh-oh.\nThis is embarrassing :(.\nThe server is not working properly. Please report this to me at ishan1608@gmail.com');
-            }
-        });
+		fs.readFile('index.html', function (err, fileData) {
+			if (!err) {
+				res.writeHead(200, {'Content-Type': 'text/html'});
+				res.end(fileData);
+			} else {
+				winston.log('error', `Cannot open index.html ${req.method} ${req.url}`);
+				res.writeHead(500, {'Content-Type': 'text/plain'});
+				res.end('uh-oh.\nThis is embarrassing :(.\nThe server is not working properly. Please report this to me at ishan1608@gmail.com');
+			}
+		});
 	} else if (firstLocation === 'static') {
 		staticServer.serve(req, res);
 	} else {
@@ -45,5 +45,5 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(port, hostname, () => {
-  winston.log('debug', `Server running at http://${hostname}:${port}/`);
+	winston.log('debug', `Server running at http://${hostname}:${port}/`);
 });
