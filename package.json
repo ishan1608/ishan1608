@@ -1,7 +1,10 @@
 {
 	"name": "space",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Personal website of Ishan",
+	"engines": {
+		"node": "10.x"
+	},
 	"main": "server.js",
 	"scripts": {
 		"start": "node server.js",

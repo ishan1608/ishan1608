@@ -7,7 +7,7 @@ const nodeStatic = require('node-static');
 const winston = require('winston');
 
 const hostname = '0.0.0.0';
-const port = 8000;
+const port = process.env.PORT || 8000;
 
 // Configuring winston
 winston.configure({
