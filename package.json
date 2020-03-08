@@ -25,8 +25,8 @@
 	},
 	"homepage": "https://github.com/ishan1608/space#readme",
 	"dependencies": {
-		"node-static": "^0.7.10",
-		"winston": "^2.4.0",
+		"node-static": "^0.7.11",
+		"winston": "^2.4.4",
 		"wurl": "^2.5.2"
 	}
 }
