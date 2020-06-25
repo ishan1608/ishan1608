@@ -43,7 +43,7 @@ body {
 
 .timeline-box {
     position: relative;
-    left: 26px
+    left: 5px;
 }
 
 .timeline-box:after {
@@ -120,10 +120,6 @@ body {
 
 .blog-btn:hover, .download-resume-btn:hover {
     color: #000000;
-}
-
-li {
-    list-style-type: none;
 }
 
 li a {
