@@ -1,0 +1,32 @@
+{
+	"name": "space",
+	"version": "1.0.1",
+	"description": "Personal website of Ishan",
+	"engines": {
+		"node": "10.x"
+	},
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ishan1608/space.git"
+	},
+	"keywords": [
+		"ishan",
+		"ishan1608@gmail.com"
+	],
+	"author": "Ishan <ishan1608@gmail.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/ishan1608/space/issues"
+	},
+	"homepage": "https://github.com/ishan1608/space#readme",
+	"dependencies": {
+		"node-static": "^0.7.11",
+		"winston": "^2.4.4",
+		"wurl": "^2.5.2"
+	}
+}
